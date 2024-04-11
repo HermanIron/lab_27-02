@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>1- VERIFICAR PASSWORD</h1>
+  </div>
+
+    <div>   
+          <div id="contenedor2">
+            <p>Crea una petición de password, (que tú creas e incrustas en el código) de manera que si el usuario y el password coinciden con los guardados, dé acceso a la página *, y si no, que siga preguntando.</p>
+
+            <p>Una vez te funcione, intenta hacer la presentación más atractiva mediante CSS. </p>
+
+            <p>+ EXTRA: dar un máximo de intentos, por ejemplo, si no se consigue a los 3 intentos, salir del programa </p>
+            <p>* para ir a otra página mediante javascript, usar la instrucción:  window.open("https://www.w3schools.com") </p>
+          </div>
+        
+          <br>
+          <hr>
+
+          <div class="contenedor-login">
+            <h2>Log-in</h2>
+            <form id="Form">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        
+                <p id="error"></p>
+                <script src="main.js"></script>
+          </div>
+    </div>
+
+</body>
+</html>
